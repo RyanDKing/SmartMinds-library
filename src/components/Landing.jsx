@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import UndrawBooks from "../assets/Undraw_Books.svg";
 import Logo from "../assets/SmartMinds.png";
 
 const Landing = () => {

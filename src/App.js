@@ -6,7 +6,8 @@ import Books from "./pages/Books.jsx";
 import { books } from "./data";
 import BooksInfo from "./pages/BooksInfo.jsx";
 import Cart from "./pages/Cart.jsx";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import "./index.css";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -34,8 +35,6 @@ function App() {
     });
     return counter;
   }
-
-  useEffect(() => {}, [cart]);
 
   return (
     <Router>

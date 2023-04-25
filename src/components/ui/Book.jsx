@@ -1,10 +1,13 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Price from "./Price";
 import Rating from "./Rating";
 
 const Book = ({ book }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [img, setImg] = useState();
 
   const mountedRef = useRef(true);
@@ -19,10 +22,6 @@ const Book = ({ book }) => {
         }
       }, 300);
     };
-    // return () => {
-    //   //When the   component unmounts
-    //   mountedRef.current = false;
-    // };
   });
 
   return (
